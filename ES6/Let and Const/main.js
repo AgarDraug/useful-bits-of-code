@@ -35,6 +35,11 @@ const colors = [];
 colors.push('red');
 colors.push('blue');
 
-colors = 'green';
-
+//colors = 'green';
+//this doesnt work because constant doesn't let you change the value of the variable
 console.log(colors);
+
+/*Let makes it so your variables have a narrower scope,
+ making it easier to maintain.
+ Const makes it so your variable can't be completly changed 
+ after you set it */
