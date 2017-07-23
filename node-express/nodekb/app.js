@@ -106,14 +106,15 @@ app.delete('/articles/:id', (req, res) => {
 });
 
 // Add Route
-app.get('/articles/add', (req, res) => {
+app.get('/article/add', (req, res) => {
+    console.log("rendering");
     res.render('add_article', {
         title:'Add Article'
     });
 });
 
 // Add Submit POST Route
-app.post('/articles/add', (req, res) =>{
+app.post('/article/add', (req, res) =>{
     let article = new Article();
     article.title = req.body.title;
     article.author = req.body.author;
